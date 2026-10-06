@@ -291,16 +291,18 @@
 
     <div class="page">
       <div>
+        <p align="center">
         <span class="tag">Observatório Astronômico • UNIFAL-MG</span>
-        <h1>Agende sua visita<br />e observe o céu de <span class="highlight">Alfenas</span>.</h1>
-        <p class="subtitle">Preencha o formulário ao lado para enviar seu pedido de agendamento para a equipe do Observatório Astronômico da UNIFAL-MG. As visitas costumam ocorrer às quartas-feiras, no período noturno, e a data escolhida será analisada e confirmada por e-mail.</p>
+        </p>
+        <h1 align="center">Agende sua visita<br />e observe o céu de <span class="highlight">Alfenas</span>.</h1>
+        <p class="subtitle">Preencha o formulário ao lado para enviar seu pedido de agendamento para a equipe do Observatório Astronômico da UNIFAL-MG. As visitas costumam ocorrer no período noturno, entre 18h30 e 21h. A data escolhida será analisada e confirmada por e-mail ou pelo telefone de contato.</p>
 
         <section class="info-card">
           <div class="info-title">Como funcionam as visitas?</div>
           <ul class="info-list">
             <li><strong>Local:</strong> Unidade Educacional Santa Clara, Prédio F, bairro Santa Clara, Alfenas/MG.</li>
-            <li><strong>Público:</strong> Escolas da região, grupos organizados e comunidade em geral.</li>
-            <li><strong>Horário típico:</strong> visitas noturnas, em geral às quartas-feiras, em faixa de horário previamente divulgada pela UNIFAL-MG.</li>
+            <li><strong>Público:</strong> Escolas, grupos organizados e comunidade em geral.</li>
+            <li><strong>Horário típico:</strong> visitas noturnas  entre 18h30 e 21h previamente agendadas.</li>
             <li><strong>Agendamento:</strong> o pedido deve ser feito com antecedência; a visita só é confirmada após o retorno por e-mail da equipe.</li>
             <li><strong>Condições climáticas:</strong> em caso de céu nublado ou chuva, pode não haver observação, e a programação pode ser adaptada ou reagendada.</li>
           </ul>
@@ -308,7 +310,7 @@
           <div class="astro-visual">
             <div class="orbit"></div>
             <div>
-              <div style="color: white;"><strong>Noite clara, céu estrelado.</strong></div>
+              <div style="color: white;"><strong>Noite clara, céu estrelado.</strong>                </div>
               <div style="text-align: justify;">Se o céu estiver nublado ou chovendo, a observação pode ser cancelada e a visita remarcada para outra data.</div>
             </div>
           </div>
@@ -319,8 +321,8 @@
         <h2 style="font-size: 18px; margin-bottom: 6px;">Pedido de agendamento</h2>
         <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Escolha a data desejada e informe os dados do seu grupo. Entraremos em contato por e-mail com a confirmação.</p>
 
-        <form id="agendamentoForm" method="POST" action="https://formspree.io/f/xrekoopb">
-        <input type="hidden" name="_subject" value="Novo Agendamento: Observat�rio UNIFAL">
+        <form id="agendamentoForm" method="POST" action="https://formspree.io/f/mnjzkvjv">
+        <input type="hidden" name="_subject" value="Novo Agendamento: Observat rio UNIFAL">
           <div class="field-group">
             <label>Nome completo <span style="color:var(--accent)">*</span></label>
             <input type="text" name="nome" placeholder="Digite seu nome" required />
@@ -331,17 +333,29 @@
             <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
           </div>
 
+<div class="field-group">
+            <label>Telefone <span style="color:var(--accent)">*</span></label>
+            <input type="text" name="telefone" placeholder="Digite seu telefone com DDD" required />
+          </div>
+
+
+
           <div class="field-group">
             <label>Tipo de visita <span style="color:var(--accent)">*</span></label>
             <div class="radio-row">
               <label class="radio-pill active">
                 <input type="radio" name="tipo" value="Publico geral" checked />
-                Público geral
+                Comunidade em geral
               </label>
               <label class="radio-pill">
-                <input type="radio" name="tipo" value="Escola / grupo organizado" />
-                Escola / Grupo
+                <input type="radio" name="tipo" value="Escola" />
+                Escolas
               </label>
+             <label class="radio-pill">
+                <input type="radio" name="tipo" value=" grupo organizado" />
+                Grupos organizados
+              </label>
+
             </div>
           </div>
 
@@ -354,9 +368,8 @@
               <label>Horário aproximado <span style="color:var(--accent)">*</span></label>
               <select name="horario" required>
                 <option value="">Selecione</option>
-                <option value="Noite (19h às 21h)">19h às 21h</option>
-                <option value="Noite (21h às 23h)">21h às 23h</option>
-                <option value="Outro horário">Outro horário</option>
+                <option value="Noite (18h30 às 21h)">18h30 às 21h</option>
+                <option value="Outro horário">Outro horário - descreva em Observações adicionais</option>
               </select>
             </div>
           </div>
@@ -387,10 +400,15 @@
     <font face="Arial Unicode MS">
 
     <footer>
-      Observatório Astronômico – Universidade Federal de Alfenas (UNIFAL-MG), Unidade Educacional Santa Clara – Prédio F, Alfenas/MG.<br />
+      <a target="_blank" href="https://www.unifal-mg.edu.br/observatorio/">
+	<font color="#E3F2FD">Observatório Astronômico</font></a><font color="#E3F2FD"> – Universidade Federal de Alfenas (</font><a target="_blank" href="https://www.unifal-mg.edu.br/portal/index/"><font color="#E3F2FD">UNIFAL-MG</font></a><font color="#E3F2FD">), Unidade Educacional Santa Clara – Prédio F, Alfenas/MG.<br />
       Página desenvolvida por Julio Marcos de Oliveira Domingues e Prof. 
-	Luciano Soares Pedroso – Física Licenciatura, UNIFAL-MG, Campus Alfenas.<br />
-      Acompanhe a programação e as datas especiais também pelo Instagram oficial do Observatório.
+	Luciano Soares Pedroso – 
+	<a target="_blank" href="https://www.unifal-mg.edu.br/fisica/">
+	<font color="#E3F2FD">Física Licenciatura</font></a>, UNIFAL-MG, Campus Alfenas.<br />
+      Acompanhe a programação e as datas especiais também pelo </font>
+	<a target="_blank" href="https://www.instagram.com/oa_unifal?igsh=MWpyNXJndDFycXR3Nw==">
+	<font color="#E3F2FD">Instagram oficial do Observatório</font></a><font color="#E3F2FD">.
     </footer>
   </div>
 
@@ -404,6 +422,7 @@
       });
     });
   </script>
+	</font>
 	</font>
 </body>
 </html>
